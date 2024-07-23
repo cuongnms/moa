@@ -34,15 +34,15 @@ const Section5 = () => {
             loop={true}
             navigation={{
               clickable: true,
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
+              nextEl: ".sec5-swiper-button-next",
+              prevEl: ".sec5-swiper-button-prev",
             }}
             pagination={{
               el: ".sec5-swiper-pagination",
               clickable: true,
             }}
             autoplay={{ delay: 3000 }}
-            className="swiper-container"
+            className="sec5-swiper-container"
           >
             <SwiperSlide className="swiper-slide">
               <img src={String(img1)} alt="Temp" />
@@ -59,11 +59,9 @@ const Section5 = () => {
             <SwiperSlide className="swiper-slide">
               <img src={String(img1)} alt="Temp" />
             </SwiperSlide>
-            <div className="slider-controler">
-              <div className="swiper-button-prev">
-              </div>
-              <div className="swiper-button-next">
-              </div>
+            <div className="sec5-slider-controler">
+              <div className="sec5-swiper-button-prev"></div>
+              <div className="sec5-swiper-button-next"></div>
             </div>
           </Swiper>
           <div className="sec5-swiper-pagination"></div>

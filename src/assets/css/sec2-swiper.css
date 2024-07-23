@@ -1,68 +1,127 @@
-
 @media (max-width: 640px) {
-.swiper-container {
+
+  
+
+  .sec2-swiper-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
   }
 
-  .swiper-slide {
+  .sec2-swiper-slide {
     height: 100%;
     width: 100%;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .frame {
+    width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    opacity: 1;
+    aspect-ratio: 750/1334;
   }
 
-  .swiper-slide img {
-    height: 100%;
-    margin: auto;
+  .frame .img {
+    position: absolute;
   }
 
-  .slider-controler {
+  .frame-content {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtitle {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 570/103;
+  }
+
+  .btn-viewmore {
+    width: 50%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-btn-viewmore.png") !important;
+    aspect-ratio: 298/61;
+    margin-top: 6%;
+
+  }
+
+  .sec2-content-txt {
+    color: white;
+    font-size: var(--fs-sec2-content);
+  }
+
+
+  .sec2-slider-controler {
     position: absolute;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    top: 0%;
+  }
+
+  .sec2-slider-controler .sec2-swiper-button-next {
+    width: 17%;
+    height: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-swiper-right.png") !important;
+    background-color: transparent;
+    aspect-ratio: 140/100;
+    z-index: 10;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .sec2-slider-controler .sec2-swiper-button-prev {
+    width: 17%;
+    height: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-swiper-left.png") !important;
+    background-color: transparent;
+    aspect-ratio: 140/100;
+    z-index: 10;
+  }
+
+  .sec2-swiper-pagination {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    top: 0%;
-  }
-
-  .slider-controler .swiper-button-next {
-    width: 6%;
-    height: 8%;
-    right: 6%;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-image: url("../images/sec5-swiper-right.png") !important;
-    background-color: transparent;
-    aspect-ratio: 34/51;
-  }
-
-  .swiper-button-next::after{
-    display: none;
-  }
-
-  .swiper-button-prev::after{
-    display: none;
-  }
-
-  .slider-controler .swiper-button-prev {
-    width: 6%;
-    height: 8%;
-    left: 6%;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-image: url("../images/sec5-swiper-left.png") !important;
-    background-color: transparent;
-    aspect-ratio: 34/51;
-  }
-
-  .swiper-pagination {
-    position: absolute;
-    width: 100%;
-    height: 5%;
-    margin-bottom: -10%;
+    height: 4%;
+    bottom: 0;
+    z-index: 10;
   }
 
   .swiper-pagination-bullet {
@@ -83,7 +142,7 @@
     background-color: transparent !important;
   }
 
-  .swiper-pagination .swiper-pagination-bullet {
+  .sec2-swiper-pagination .swiper-pagination-bullet {
     width: 4%;
     height: 63%;
   }

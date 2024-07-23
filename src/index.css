@@ -6,6 +6,7 @@
   --fs-header: 1.5rem;
   --fs-footer: 1rem;
   --fs-sec4: 1rem;
+  --fs-sec2-content: 1rem;
 }
 
 body {
@@ -515,6 +516,8 @@ img,
     --fs-header: 3.5vw;
     --fs-footer: 2vw;
     --fs-sec4: 2.5vw;
+    --fs-sec2-content: 3vw;
+
   }
 
   /* Header css */
@@ -569,6 +572,7 @@ img,
 
   .sec2-title {
     position: absolute;
+    z-index: 10;
     top: 6%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -581,12 +585,14 @@ img,
   }
 
   .sec2-container {
-    height: 80%;
+    height: 100%;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  
 
   /* Section3 css */
   .responsive-bg3 {

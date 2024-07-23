@@ -1,6 +1,9 @@
 @media (max-width: 640px) {
-  .swiper-container {
+  .sec5-swiper-container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
   }
 
@@ -15,17 +18,18 @@
     margin: auto;
   }
 
-  .slider-controler {
+  .sec5-slider-controler {
     position: absolute;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     top: 0%;
+    z-index: 10;
   }
 
-  .slider-controler .swiper-button-next {
+  .sec5-slider-controler .sec5-swiper-button-next {
     width: 6%;
     height: 8%;
     right: 6%;
@@ -45,7 +49,7 @@
     display: none;
   }
 
-  .slider-controler .swiper-button-prev {
+  .sec5-slider-controler .sec5-swiper-button-prev {
     width: 6%;
     height: 8%;
     left: 6%;
