@@ -38,7 +38,7 @@ const Section5 = () => {
               prevEl: ".swiper-button-prev",
             }}
             pagination={{
-              el: ".swiper-pagination",
+              el: ".sec5-swiper-pagination",
               clickable: true,
             }}
             autoplay={{ delay: 3000 }}
@@ -59,7 +59,6 @@ const Section5 = () => {
             <SwiperSlide className="swiper-slide">
               <img src={String(img1)} alt="Temp" />
             </SwiperSlide>
-
             <div className="slider-controler">
               <div className="swiper-button-prev">
               </div>
@@ -67,7 +66,7 @@ const Section5 = () => {
               </div>
             </div>
           </Swiper>
-          <div className="swiper-pagination"></div>
+          <div className="sec5-swiper-pagination"></div>
         </div>
       </div>
     </>
