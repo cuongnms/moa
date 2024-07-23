@@ -14,13 +14,13 @@ const Section4 = () => {
               <div className="flag1" />
               <div
                 className="treasure-close"
-                style={{ backgroundImage: { closeTreasure } }}
+                style={{ backgroundImage: { openTreasure } }}
               />
             </div>
             <div className="sec4-flag1">
               <div className="flag1" />
               <div
-                className="treasure-close"
+                className="treasure-open"
                 style={{ backgroundImage: { closeTreasure } }}
               />
             </div>

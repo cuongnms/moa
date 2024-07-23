@@ -1,0 +1,90 @@
+
+@media (max-width: 640px) {
+.swiper-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    margin: auto;
+  }
+
+  .slider-controler {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0%;
+  }
+
+  .slider-controler .swiper-button-next {
+    width: 6%;
+    height: 8%;
+    right: 6%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec5-swiper-right.png") !important;
+    background-color: transparent;
+    aspect-ratio: 34/51;
+  }
+
+  .swiper-button-next::after{
+    display: none;
+  }
+
+  .swiper-button-prev::after{
+    display: none;
+  }
+
+  .slider-controler .swiper-button-prev {
+    width: 6%;
+    height: 8%;
+    left: 6%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec5-swiper-left.png") !important;
+    background-color: transparent;
+    aspect-ratio: 34/51;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    margin-bottom: -10%;
+  }
+
+  .swiper-pagination-bullet {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/swiper-bullet.png") !important;
+    aspect-ratio: 21/21;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/swiper-bullet-active.png") !important;
+    aspect-ratio: 21/21;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 4%;
+    height: 63%;
+  }
+}

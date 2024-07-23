@@ -580,6 +580,14 @@ img,
     aspect-ratio: 655/96;
   }
 
+  .sec2-container {
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* Section3 css */
   .responsive-bg3 {
     background-image: url("./assets/images/sec3-bg-mb.png");
@@ -730,16 +738,14 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/sec4-treasure-close.png");
     aspect-ratio: 89/73;
   }
 
   .treasure-open {
-    width: 100%;
+    width: 36%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/sec4-treasure-open.png");
     aspect-ratio: 88/74;
   }
 
@@ -776,7 +782,6 @@ img,
     align-items: center;
     justify-content: center;
     color: white;
-
     font-size: var(--fs-sec4);
     font-family: "beaufort-reg";
     color: "white";
@@ -794,11 +799,21 @@ img,
     width: 100%;
   }
 
+  .sec5-container {
+    height: 65%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28%;
+  }
+
+
   /* Footer css */
   .responsive-bg-footer {
     background-image: url("./assets/images/footer-bg-mb.png");
     aspect-ratio: 750/172;
-    margin-top: -130px;
+    margin-top: -16%;
   }
 
   .logo-redfox {
