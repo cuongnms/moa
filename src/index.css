@@ -618,6 +618,80 @@ img,
     aspect-ratio: 666/98;
   }
 
+  .sec3-curve-char{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-curve-char-mb.png");
+    aspect-ratio: 750/322;
+  }
+
+  .sec3-icon-char1 {
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char1.png");
+    aspect-ratio: 139/140;
+    transition: transform 0.6s;
+
+  }
+
+  .wrapper {
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    width: 100%;
+    transition: transform 1s;
+  }
+
+  .wrapper.open {
+    transform: translateX(30%);
+  }
+
+  .wrapper.open .sec3-icon-char1 {
+    transform: translateY(52%);
+  }
+
+  .sec3-icon-char2 {
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    width: 22%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char2-active.png");
+    aspect-ratio: 174/174;
+  }
+
+  .sec3-icon-char3 {
+    position: absolute;
+    top: 37%;
+    right: 5%;
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char3.png");
+    aspect-ratio: 139/140;
+  }
+
+  .sec3-icon-char1::after {
+    width: 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char1-active.png");
+    aspect-ratio: 174/174;
+  }
+
   /* Section4 css */
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-mb.png");
@@ -840,6 +914,21 @@ img,
     font-family: "beaufort-reg";
     color: white;
     width: 90%;
+  }
+
+
+  @keyframes xAxis {
+    50% {
+      animation-timing-function: ease-in;
+      transform: translateX(175%);
+    }
+  }
+  
+  @keyframes yAxis {
+    50% {
+      animation-timing-function: ease-out;
+      transform: translateY(-60%);
+    }
   }
 }
 
