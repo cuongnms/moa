@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Autoplay,
@@ -12,6 +12,8 @@ import "swiper/css/effect-coverflow";
 import "swiper/css";
 import "../assets/css/sec5-swiper.css";
 import img1 from "../assets/images/sec5-banner1.png";
+import img2 from "../assets/images/sec4-bg-mb.png";
+
 const Section5 = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const Section5 = () => {
         <div className="sec5-title" />
         <div className="sec5-container">
           <Swiper
-            modules={[EffectCoverflow, Navigation, Pagination]}
+            modules={[EffectCoverflow, Autoplay, Navigation, Pagination]}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -48,7 +50,7 @@ const Section5 = () => {
               <img src={String(img1)} alt="Temp" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+              <img src={String(img2)} alt="Temp" />
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
               <img src={String(img1)} alt="Temp" />

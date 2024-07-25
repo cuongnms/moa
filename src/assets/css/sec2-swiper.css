@@ -10,26 +10,14 @@
     height: 100%;
   }
 
-  .sec2-swiper-slide {
+  .swiper-slide {
     height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: 10;
-  }
-
-  .frame {
-    width: 100%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    opacity: 1;
-    aspect-ratio: 750/1334;
   }
 
-  .frame .img {
+
+  .swiper-slide .img {
     position: absolute;
   }
 
