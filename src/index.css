@@ -517,7 +517,6 @@ img,
     --fs-footer: 2vw;
     --fs-sec4: 2.5vw;
     --fs-sec2-content: 3vw;
-
   }
 
   /* Header css */
@@ -592,7 +591,6 @@ img,
     align-items: center;
     justify-content: center;
   }
-  
 
   /* Section3 css */
   .responsive-bg3 {
@@ -618,7 +616,7 @@ img,
     aspect-ratio: 666/98;
   }
 
-  .sec3-curve-char{
+  .sec3-curve-char {
     position: absolute;
     top: 0%;
     width: 100%;
@@ -629,69 +627,40 @@ img,
     aspect-ratio: 750/322;
   }
 
+  .sec3-circle {
+    position: absolute;
+    width: 110%;
+    top: 0%; /*160 */
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    left: -5%;
+  
+  }
+
   .sec3-icon-char1 {
     position: absolute;
-    top: 37%;
-    left: 5%;
     width: 20%;
+    border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("./assets/images/sec3-icon-char1.png");
-    aspect-ratio: 139/140;
-    transition: transform 0.6s;
-
+    aspect-ratio: 140/140;
   }
 
-  .wrapper {
-    position: absolute;
-    top: 42%;
-    left: 5%;
-    width: 100%;
-    transition: transform 1s;
-  }
+  
+  .item1 { top: 0; left: 50%; transform: translate(-50%, -50%);  }
+  .item2 { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+  .item3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+  .item4 { top: 85%; left: 85%; transform: translate(-50%, -50%); }
+  .item5 { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+  .item6 { top: 85%; left: 15%; transform: translate(-50%, -50%); }
+  .item7 { top: 50%; left: 0; transform: translate(-50%, -50%); }
+  .item8 { top: 15%; left: 15%; transform: translate(-50%, -50%); }
 
-  .wrapper.open {
-    transform: translateX(30%);
+  .rotate1 {
+    transform: rotate(45deg);
   }
-
-  .wrapper.open .sec3-icon-char1 {
-    transform: translateY(52%);
-  }
-
-  .sec3-icon-char2 {
-    position: absolute;
-    top: 60%;
-    left: 38%;
-    width: 22%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("./assets/images/sec3-icon-char2-active.png");
-    aspect-ratio: 174/174;
-  }
-
-  .sec3-icon-char3 {
-    position: absolute;
-    top: 37%;
-    right: 5%;
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("./assets/images/sec3-icon-char3.png");
-    aspect-ratio: 139/140;
-  }
-
-  .sec3-icon-char1::after {
-    width: 10%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("./assets/images/sec3-icon-char1-active.png");
-    aspect-ratio: 174/174;
-  }
-
   /* Section4 css */
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-mb.png");
@@ -888,7 +857,6 @@ img,
     margin-top: 26%;
   }
 
-
   /* Footer css */
   .responsive-bg-footer {
     background-image: url("./assets/images/footer-bg-mb.png");
@@ -916,14 +884,13 @@ img,
     width: 90%;
   }
 
-
   @keyframes xAxis {
     50% {
       animation-timing-function: ease-in;
       transform: translateX(175%);
     }
   }
-  
+
   @keyframes yAxis {
     50% {
       animation-timing-function: ease-out;
