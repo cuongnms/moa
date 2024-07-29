@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Autoplay,
+  EffectFade,
   EffectCoverflow,
   Navigation,
   Pagination,
@@ -13,6 +14,8 @@ import "swiper/css";
 import "../assets/css/sec5-swiper.css";
 import img1 from "../assets/images/sec5-banner1.png";
 import img2 from "../assets/images/sec4-bg-mb.png";
+import "swiper/css/effect-fade";
+
 
 const Section5 = () => {
   return (
@@ -26,6 +29,10 @@ const Section5 = () => {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
+            // effect={"fade"}
+            // fadeEffect={{
+            //   crossFade: true,
+            // }}
             coverflowEffect={{
               rotate: 0,
               stretch: 200,

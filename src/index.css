@@ -135,7 +135,7 @@ img,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1920/1080;
+  {{/* aspect-ratio: 1920/1080; */}}
 }
 
 .sec2-title {
@@ -313,8 +313,8 @@ img,
 
   /* Section2 css */
   .responsive-bg2 {
-    background-image: url("./assets/images/sec2-bg-mb.png");
-    aspect-ratio: 750/1334;
+    {{/* background-image: url("./assets/images/sec2-bg-mb.png"); */}}
+    aspect-ratio: 750/1333;
   }
 
   /* Section3 css */
@@ -583,7 +583,7 @@ img,
   /* Section2 css */
   .responsive-bg2 {
     background-color: black;
-    aspect-ratio: 750/1334;
+    aspect-ratio: 750/1333;
   }
 
   .sec2-title {
