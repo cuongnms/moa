@@ -132,7 +132,7 @@ const Section3 = () => {
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full ml-[17%]">
+              <div className="relative flex items-center justify-start w-full pl-[9%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -173,7 +173,7 @@ const Section3 = () => {
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full ml-[17%]">
+              <div className="relative flex items-center justify-start w-full pl-[9%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -214,7 +214,7 @@ const Section3 = () => {
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full ml-[17%]">
+              <div className="relative flex items-center justify-start w-full pl-[9%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's

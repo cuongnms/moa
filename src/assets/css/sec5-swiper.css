@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .sec5-swiper-container {
     position: relative;
     display: flex;
@@ -94,4 +94,8 @@
     width: 4%;
     height: 63%;
   }
+}
+
+@media (min-width: 769px) {
+
 }

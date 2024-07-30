@@ -60,8 +60,6 @@ img,
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("./assets/images/header_pc.png");
-  aspect-ratio: 1920/102;
 }
 
 .header-text {
@@ -95,47 +93,17 @@ img,
   aspect-ratio: 1920/1080;
 }
 
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.logo-18 {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 30%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("./assets/images/logo-18.png");
-  aspect-ratio: 194/74;
-}
-
-.scroll {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 12%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("./assets/images/scroll.png");
-  aspect-ratio: 256/96;
-}
-
 /* sec2 css */
 
 .responsive-bg2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  {{/* aspect-ratio: 1920/1080; */}}
+   {
+     {
+      /* aspect-ratio: 1920/1080; */
+    }
+  }
 }
 
 .sec2-title {
@@ -255,9 +223,12 @@ img,
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) {
   :root {
     --fs-header: 2.5vw;
+    --fs-footer: 2vw;
+    --fs-sec4: 2.5vw;
+    --fs-sec2-content: 3vw;
   }
   .responsive-bg-header {
     background-image: url("./assets/images/header_pc.png");
@@ -271,50 +242,81 @@ img,
 
   .header-text {
     font-size: var(--fs-header);
-    font-family: "beaufort-reg";
+    font-family: "beaufort-med";
   }
 
   .left-header-wrapper {
     width: 27%;
     margin-right: 5%;
   }
+
+  /* Section1 css */
+  .responsive-bg1 {
+    background-image: url("./assets/images/sec1-bg-pc.png");
+    aspect-ratio: 1920/1080;
+  }
+
+  .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  :root {
-    --fs-header: 3.5vw;
-    --fs-footer: 2vw;
-    --fs-sec4: 2.5vw;
-  }
-  .responsive-bg-header {
-    background-image: url("./assets/images/header_mb.png");
-    aspect-ratio: 750/112;
-  }
+.logo-18 {
+  position: absolute;
+  top: 12%;
+  left: 1%;
+  width: 17%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/logo-18.png");
+  aspect-ratio: 194/74;
+}
 
-  .header-logo {
-    position: relative;
-    width: 46%;
-  }
-
-  .header-text {
-    font-size: var(--fs-header);
-    font-family: "beaufort-med";
-  }
-
-  .left-header-wrapper {
-    width: 38%;
-    margin-right: 6%;
-  }
-
-  .responsive-bg1 {
-    background-image: url("./assets/images/sec1-bg-mb.png");
-    aspect-ratio: 750/1334;
-  }
+.scroll {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/scroll.png");
+  aspect-ratio: 256/96;
+}
 
   /* Section2 css */
   .responsive-bg2 {
-    {{/* background-image: url("./assets/images/sec2-bg-mb.png"); */}}
-    aspect-ratio: 750/1333;
+    background-color: black;
+    aspect-ratio: 1920/1080;
+  }
+
+  .sec2-title {
+    position: absolute;
+    z-index: 10;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec2-title.png");
+    aspect-ratio: 655/96;
+  }
+
+  .sec2-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Section3 css */
@@ -332,6 +334,202 @@ img,
     aspect-ratio: 750/1333;
   }
 
+  .sec3-title {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    aspect-ratio: 666/98;
+  }
+
+  .sec3-curve-char {
+    position: absolute;
+    top: -3%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-curve-char-mb.png");
+    aspect-ratio: 750/322;
+    z-index: 10;
+  }
+
+  .sec3-circle {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    top: -160%;
+  }
+
+  .item {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dk {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char2.png");
+  }
+
+  .dw {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char1.png");
+  }
+
+  .elf {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char3.png");
+  }
+
+  .dk-active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char2-active.png");
+  }
+
+  .dw-active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char1-active.png");
+  }
+
+  .elf-active {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/sec3-icon-char3-active.png");
+  }
+
+  /* Use nth-child to position items around the circle */
+  .item:nth-child(1) {
+    transform: rotate(0deg) translateX(280%) rotate(-0deg) rotate(-90deg);
+  }
+  .item:nth-child(2) {
+    transform: rotate(40deg) translateX(280%) rotate(-40deg) rotate(-50deg);
+  }
+  .item:nth-child(3) {
+    transform: rotate(80deg) translateX(280%) rotate(-80deg) rotate(-10deg);
+  }
+  .item:nth-child(4) {
+    transform: rotate(120deg) translateX(280%) rotate(-120deg) rotate(30deg);
+  }
+  .item:nth-child(5) {
+    transform: rotate(160deg) translateX(280%) rotate(-160deg) rotate(70deg);
+  }
+  .item:nth-child(6) {
+    transform: rotate(200deg) translateX(280%) rotate(-200deg) rotate(110deg);
+  }
+  .item:nth-child(7) {
+    transform: rotate(240deg) translateX(280%) rotate(-240deg) rotate(150deg);
+  }
+  .item:nth-child(8) {
+    transform: rotate(280deg) translateX(280%) rotate(-280deg) rotate(190deg);
+  }
+  .item:nth-child(9) {
+    transform: rotate(320deg) translateX(280%) rotate(-320deg) rotate(230deg);
+  }
+
+  .sec3-char-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0%;
+  }
+
+  .dk-wrapper {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/dk-bg.png");
+    aspect-ratio: 1446/1080;
+  }
+
+  .dw-wrapper {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/dw-bg.png");
+    aspect-ratio: 1446/1080;
+  }
+
+  .elf-wrapper {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/elf-bg.png");
+    aspect-ratio: 1446/1080;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 2s;
+    z-index: 1;
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 2s;
+    z-index: -1;
+  }
+
+  .sec3-char-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    top: 15%;
+    right: 0%;
+  }
+  .char-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: var(--fs-sec2-content);
+  }
+
+  .char-name-dk {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 423/392;
+  }
+
+  .char-name-dw {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 387/328;
+  }
+
+  .char-name-elf {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 215/178;
+  }
   /* Section4 css */
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-mb.png");
@@ -458,16 +656,14 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/sec4-treasure-close.png");
     aspect-ratio: 89/73;
   }
 
   .treasure-open {
-    width: 100%;
+    width: 36%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/sec4-treasure-open.png");
     aspect-ratio: 88/74;
   }
 
@@ -504,7 +700,6 @@ img,
     align-items: center;
     justify-content: center;
     color: white;
-
     font-size: var(--fs-sec4);
     font-family: "beaufort-reg";
     color: "white";
@@ -516,19 +711,50 @@ img,
     aspect-ratio: 750/1334;
   }
 
+  .sec5-title {
+    top: 5%;
+    left: 52%;
+    width: 100%;
+  }
+
+  .sec5-container {
+    height: 65%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26%;
+  }
+
   /* Footer css */
   .responsive-bg-footer {
     background-image: url("./assets/images/footer-bg-mb.png");
     aspect-ratio: 750/172;
-    margin-top: -130px;
+    margin-top: -16%;
   }
 
-  .video {
-    display: none;
+  .logo-redfox {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/logo-redfox.png");
+    aspect-ratio: 208/84;
+  }
+
+  .footer-text {
+    font-size: var(--fs-footer);
+    font-family: "beaufort-reg";
+    color: white;
+    width: 90%;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   :root {
     --fs-header: 3.5vw;
     --fs-footer: 2vw;
@@ -647,9 +873,9 @@ img,
 
   .sec3-circle {
     position: absolute;
-    width: 100%; /* Diameter of the circle container */
-    aspect-ratio: 1/1; /* Diameter of the circle container */
-    border-radius: 50%; /* Ensures the circle shape */
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -659,8 +885,8 @@ img,
 
   .item {
     position: absolute;
-    width: 20%; /* Diameter of each item */
-    height: 20%; /* Diameter of each item */
+    width: 20%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,20 +980,22 @@ img,
   }
 
   .dw-wrapper {
-height: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("./assets/images/dw-bg.png");
-    aspect-ratio: 1446/1080;  }
+    aspect-ratio: 1446/1080;
+  }
 
   .elf-wrapper {
-height: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("./assets/images/elf-bg.png");
-    aspect-ratio: 1446/1080;  }
+    aspect-ratio: 1446/1080;
+  }
 
   .animate-fade-in {
     animation: fadeIn 2s;
@@ -800,7 +1028,6 @@ height: 100%;
     color: white;
     font-size: var(--fs-sec2-content);
   }
-
 
   .char-name-dk {
     position: relative;
