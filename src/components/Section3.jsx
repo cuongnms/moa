@@ -4,9 +4,13 @@ import elfName from "../assets/images/elf-name.png";
 import dkName from "../assets/images/dk-name.png";
 import dwName from "../assets/images/dw-name.png";
 import dot from "../assets/images/swiper-bullet-active.png";
+import dkSkill1 from "../assets/images/dk-skill1.png";
+import dkSkill2 from "../assets/images/dk-skill2.png";
+import dkSkill3 from "../assets/images/dk-skill3.png";
 const Section3 = () => {
   const [rotate, setRotate] = useState(0);
   const [char, setChar] = useState("1");
+  const [skill, setSkill] = useState(0);
   useEffect(() => {
     const left = document.getElementById("2");
     const right = document.getElementById("9");
@@ -26,7 +30,6 @@ const Section3 = () => {
       document.getElementById("char1").classList.add("animate-fade-in");
       document.getElementById("char2").classList.add("animate-fade-out");
       document.getElementById("char3").classList.add("animate-fade-out");
-
       document.getElementById("char1").classList.remove("animate-fade-out");
       document.getElementById("char2").classList.remove("animate-fade-in");
       document.getElementById("char3").classList.remove("animate-fade-in");
@@ -34,7 +37,6 @@ const Section3 = () => {
       document.getElementById("char2").classList.add("animate-fade-in");
       document.getElementById("char1").classList.add("animate-fade-out");
       document.getElementById("char3").classList.add("animate-fade-out");
-
       document.getElementById("char2").classList.remove("animate-fade-out");
       document.getElementById("char1").classList.remove("animate-fade-in");
       document.getElementById("char3").classList.remove("animate-fade-in");
@@ -42,7 +44,6 @@ const Section3 = () => {
       document.getElementById("char3").classList.add("animate-fade-in");
       document.getElementById("char2").classList.add("animate-fade-out");
       document.getElementById("char1").classList.add("animate-fade-out");
-
       document.getElementById("char3").classList.remove("animate-fade-out");
       document.getElementById("char2").classList.remove("animate-fade-in");
       document.getElementById("char1").classList.remove("animate-fade-in");
@@ -123,10 +124,35 @@ const Section3 = () => {
           <div className="sec3-char-info">
             <img src={dkName} className="char-name-dk" />
             <div className="char-info">
-              <img src={dot} width={"7%"} />
-              <p> Lorem ipsum...</p>
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Giới thiệu nhân vật</p>
+                </span>
+              </div>
+              <div className="relative flex items-center justify-start w-full ml-[17%]">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Kỹ năng:</p>
+                </span>
+              </div>
+              <div className="relative w-full flex items-center justify-center gap-[2%]">
+                <img src={dkSkill1} className="w-[30%]" />
+                <img src={dkSkill2} className="w-[30%]" />
+                <img src={dkSkill3} className="w-[30%]" />
+              </div>
             </div>
-            <div className="char-skills"></div>
           </div>
           <div className="sec3-char-video"></div>
         </div>
@@ -138,8 +164,36 @@ const Section3 = () => {
         >
           <div className="sec3-char-info">
             <img src={dwName} className="char-name-dw" />
-            <div className="char-info"></div>
-            <div className="char-skills"></div>
+            <div className="char-info">
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Giới thiệu nhân vật</p>
+                </span>
+              </div>
+              <div className="relative flex items-center justify-start w-full ml-[17%]">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Kỹ năng:</p>
+                </span>
+              </div>
+              <div className="relative w-full flex items-center justify-center gap-[2%]">
+                <img src={dkSkill1} className="w-[30%]" />
+                <img src={dkSkill2} className="w-[30%]" />
+                <img src={dkSkill3} className="w-[30%]" />
+              </div>
+            </div>
           </div>
           <div className="sec3-char-video"></div>
         </div>
@@ -151,8 +205,36 @@ const Section3 = () => {
         >
           <div className="sec3-char-info">
             <img src={elfName} className="char-name-elf" />
-            <div className="char-info"></div>
-            <div className="char-skills"></div>
+            <div className="char-info">
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Giới thiệu nhân vật</p>
+                </span>
+              </div>
+              <div className="relative flex items-center justify-start w-full ml-[17%]">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div className="relative flex items-center justify-start w-full">
+                <img src={dot} className="w-[7%]" />
+                <span
+                  style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
+                >
+                  <p>Kỹ năng:</p>
+                </span>
+              </div>
+              <div className="relative w-full flex items-center justify-center gap-[2%]">
+                <img src={dkSkill1} className="w-[30%]" />
+                <img src={dkSkill2} className="w-[30%]" />
+                <img src={dkSkill3} className="w-[30%]" />
+              </div>
+            </div>
           </div>
           <div className="sec3-char-video"></div>
         </div>

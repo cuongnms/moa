@@ -40,7 +40,7 @@ const Section2 = () => {
             className="sec2-swiper-container"
           >
             <SwiperSlide
-              className="swiper-slide"
+              className="sec2-swiper-slide"
               style={{ backgroundImage: `url(${img3})` }}
             >
               <div className="frame-content">
@@ -61,7 +61,7 @@ const Section2 = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide
-              className="swiper-slide"
+              className="sec2-swiper-slide"
               style={{ backgroundImage: `url(${img2})` }}
             >
               <div className="frame-content">
@@ -82,7 +82,7 @@ const Section2 = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide
-              className="swiper-slide"
+              className="sec2-swiper-slide"
               style={{ backgroundImage: `url(${img1})` }}
             >
               <div className="frame-content">
