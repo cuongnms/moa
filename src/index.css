@@ -726,6 +726,116 @@ img,
     color: white;
     width: 90%;
   }
+
+  .floating-btn{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/floating-bg.png");
+    aspect-ratio: 192/571;
+    z-index: 10;
+    top: 20%;
+    right: 1%;
+  }
+  .floating-pay-btn {
+    position: absolute;
+    top: 33%;
+    left: 22%;
+    width:60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/pay-btn.png");
+    aspect-ratio: 138/117;
+  }
+
+  .floating-pay-btn {
+    position: absolute;
+    top: 33%;
+    left: 16%;
+    width:70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/pay-btn.png");
+    aspect-ratio: 138/117;
+  }
+  .floating-apk-download {
+    position: absolute;
+    top: 54%;
+    left: 16%;
+    width:70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/apk-download-btn.png");
+    aspect-ratio: 137/36;
+  }
+
+  .floating-as-download {
+    position: absolute;
+    top: 61%;
+    left: 16%;
+    width:70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/as-download-btn.png");
+    aspect-ratio: 137/36;
+  }
+
+  .floating-gg-download {
+    position: absolute;
+    top: 68%;
+    left: 16%;
+    width:70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/gg-download-btn.png");
+    aspect-ratio: 137/36;
+  }
+  .floating-fb {
+    position: absolute;
+    top: 75%;
+    left: 23%;
+    width:18%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/fb-icon.png");
+    aspect-ratio: 35/34;
+  }
+
+  .floating-group {
+    position: absolute;
+    top: 75%;
+    right: 23%;
+    width:18%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/group-icon.png");
+    aspect-ratio: 35/34;
+  }
+
+  .top {
+    position: absolute;
+    top: 83%;
+    right: 40%;
+    width:18%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/top-icon.png");
+    aspect-ratio: 40/53;
+  }
 }
 
 @media (max-width: 768px) {

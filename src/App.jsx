@@ -7,10 +7,12 @@ import Section3 from "./components/Section3.jsx";
 import Section4 from "./components/Section4.jsx";
 import Section5 from "./components/Section5.jsx";
 import Footer from "./components/Footer.jsx";
+import Floating from "./components/Floating.jsx";
 const App = () => {
   return (<>
       <div className="w-full overflow-hidden">
         <Header />
+        <Floating />
         <Section1 />
         <Section2 />
         <Section3 />
