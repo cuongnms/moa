@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Autoplay,
@@ -12,7 +12,13 @@ import "swiper/css/effect-coverflow";
 import "swiper/css";
 import "../assets/css/sec5-swiper.css";
 import img1 from "../assets/images/sec5-banner1.png";
+import img1Pc from "../assets/images/sec5-banner1-pc.png";
+import "swiper/css/effect-fade";
+
 const Section5 = () => {
+  const isMobile = () => {
+    return window.innerWidth < 769;
+  }
   return (
     <>
       <div className="overflow-hidden flex justify-center relative w-full responsive-bg5">
@@ -41,23 +47,28 @@ const Section5 = () => {
               el: ".sec5-swiper-pagination",
               clickable: true,
             }}
-            autoplay={{ delay: 3000 }}
+            // autoplay={{ delay: 3000 }}
             className="sec5-swiper-container"
           >
-            <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+            <SwiperSlide className="sec5-swiper-slide">
+              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+            <SwiperSlide className="sec5-swiper-slide">
+              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+            <SwiperSlide className="sec5-swiper-slide">
+              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />{" "}
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+            <SwiperSlide className="sec5-swiper-slide">
+              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />{" "}
             </SwiperSlide>
-            <SwiperSlide className="swiper-slide">
-              <img src={String(img1)} alt="Temp" />
+            <SwiperSlide className="sec5-swiper-slide">
+              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />{" "}
             </SwiperSlide>
             <div className="sec5-slider-controler">
               <div className="sec5-swiper-button-prev"></div>

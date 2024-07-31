@@ -7,56 +7,50 @@ const Section4 = () => {
     <>
       <div className="overflow-hidden flex flex-col items-center relative w-full responsive-bg4">
         <div className="sec4-title" />
+        <div className="sec4-line1" />
+        <div className="sec4-line2" />
         <div className="sec4-wrapper">
-          <div className="sec4-flags1">
-            <div className="sec4-line1" />
-            <div className="sec4-flag1">
-              <div className="flag1" />
-              <div
-                className="treasure-close"
-                style={{ backgroundImage: { openTreasure } }}
-              />
-            </div>
-            <div className="sec4-flag1">
-              <div className="flag1" />
-              <div
-                className="treasure-open"
-                style={{ backgroundImage: { closeTreasure } }}
-              />
-            </div>
+          <div className="flag1 flag1-margin1">
+            <a
+              className="treasure-close"
+              style={{ backgroundImage: `url(${closeTreasure})` }}
+            />
           </div>
-          <div className="sec4-flags2">
-            <div className="sec4-line2" />
-            <div className="sec4-flag2">
-              <div className="flag2" />
-              <div
-                className="treasure-close"
-                style={{ backgroundImage: { closeTreasure } }}
-              />
-            </div>
-            <div className="sec4-flag2">
-              <div className="flag2" />
-              <div
-                className="treasure-close"
-                style={{ backgroundImage: { closeTreasure } }}
-              />
-            </div>
-            <div className="sec4-flag2">
-              <div className="flag3" />
-              <div
-                className="treasure-close"
-                style={{ backgroundImage: { closeTreasure } }}
-              />
-            </div>
+          <div className="flag1 flag1-margin2">
+            <a
+              className="treasure-close"
+              style={{ backgroundImage: `url(${closeTreasure})` }}
+            />
+          </div>
+          <div className="flag2">
+            <div
+              className="treasure-close"
+              style={{ backgroundImage: `url(${closeTreasure})` }}
+            />
+          </div>
+          <div className="flag2">
+            <div
+              className="treasure-close"
+              style={{ backgroundImage: `url(${closeTreasure})` }}
+            />
+          </div>
+          <div className="flag3">
+            <div
+              className="treasure-close last-treasure"
+              style={{ backgroundImage: `url(${closeTreasure})` }}
+            />
           </div>
         </div>
+
         <div className="sec4-btns">
           <a href="#" className="sec4-btn-checkin"></a>
           <a href="#" className="sec4-btn-term"></a>
         </div>
         <div className="sec4-note">
-          <p>*Tham dự sự kiện đồng nghĩa người chơi đồng ý <br/>
-          với các điều khoản và điều kiện từ Ban Điều Hành</p>
+          <p>
+            *Tham dự sự kiện đồng nghĩa người chơi đồng ý
+            với các điều khoản và điều kiện từ Ban Điều Hành
+          </p>
         </div>
       </div>
     </>

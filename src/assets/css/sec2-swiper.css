@@ -1,23 +1,19 @@
-@media (max-width: 640px) {
-
-  
-
+@media (max-width: 768px) {
   .sec2-swiper-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-color: black;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
   }
 
   .sec2-swiper-slide {
     height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 10;
-  }
-
-  .frame {
     width: 100%;
     position: relative;
     display: flex;
@@ -25,12 +21,23 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    opacity: 1;
-    aspect-ratio: 750/1334;
+    aspect-ratio: 750/1333;
   }
 
-  .frame .img {
-    position: absolute;
+  .banner1 {
+    background-image: url("../images/sec2-banner1-mb.png");
+  }
+  .banner2 {
+    
+    background-image: url("../images/sec2-banner1-mb.png");
+  }
+  .banner3 {
+    background-image: url("../images/sec2-banner1-mb.png");
+  }
+
+  .swiper-slide .img {
+    height: 100%;
+    margin: auto;
   }
 
   .frame-content {
@@ -62,7 +69,6 @@
     background-image: url("../images/sec2-btn-viewmore.png") !important;
     aspect-ratio: 298/61;
     margin-top: 6%;
-
   }
 
   .sec2-content-txt {
@@ -70,14 +76,13 @@
     font-size: var(--fs-sec2-content);
   }
 
-
   .sec2-slider-controler {
     position: absolute;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     top: 0%;
   }
 
@@ -120,11 +125,12 @@
     align-items: center;
     width: 100%;
     height: 4%;
-    bottom: 0;
     z-index: 10;
+    gap: 3%;
   }
 
   .swiper-pagination-bullet {
+    width: 100%;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -134,6 +140,7 @@
   }
 
   .swiper-pagination-bullet-active {
+    width: 100%;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -145,5 +152,162 @@
   .sec2-swiper-pagination .swiper-pagination-bullet {
     width: 4%;
     height: 63%;
+  }
+}
+
+@media (min-width: 769px) {
+  .sec2-swiper-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+
+  .banner1 {
+    background-image: url("../images/sec2-banner1-pc.png");
+  }
+  .banner2 {
+    background-image: url("../images/sec2-banner2-pc.png");
+  }
+  .banner3 {
+    background-image: url("../images/sec2-banner2-pc.png");
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .sec2-swiper-slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 1920/1080;
+  }
+
+  .swiper-slide .img {
+    height: 100%;
+    margin: auto;
+  }
+
+  .frame-content {
+    position: absolute;
+    width: 33%;
+    left: 12%;
+    top: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtitle {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 570/103;
+  }
+
+  .btn-viewmore {
+    width: 50%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-btn-viewmore.png") !important;
+    aspect-ratio: 298/61;
+    margin-top: 6%;
+  }
+
+  .sec2-content-txt {
+    color: white;
+    font-size: var(--fs-sec2-content);
+  }
+
+  .sec2-slider-controler {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    top: 0%;
+  }
+
+  .sec2-slider-controler .sec2-swiper-button-next {
+    width: 8%;
+    height: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-swiper-right.png") !important;
+    background-color: transparent;
+    aspect-ratio: 140/100;
+    z-index: 10;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .sec2-slider-controler .sec2-swiper-button-prev {
+    width: 8%;
+    height: 8%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/sec2-swiper-left.png") !important;
+    background-color: transparent;
+    aspect-ratio: 140/100;
+    z-index: 10;
+  }
+
+  .sec2-swiper-pagination {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4%;
+    bottom: 0;
+    z-index: 10;
+    gap: 2%
+  }
+
+  .swiper-pagination-bullet {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/swiper-bullet.png") !important;
+    aspect-ratio: 21/21;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-image: url("../images/swiper-bullet-active.png") !important;
+    aspect-ratio: 21/21;
+    background-color: transparent !important;
+  }
+
+  .sec2-swiper-pagination .swiper-pagination-bullet {
+    width: 2%;
+    height: 90%;
   }
 }
