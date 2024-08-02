@@ -32,8 +32,8 @@ const Section5 = () => {
             slidesPerView={"auto"}
             coverflowEffect={{
               rotate: 0,
-              stretch: 200,
-              depth: 200,
+              stretch: isMobile() ? (window.innerWidth*0.76744) : (window.innerWidth * 0.688),  
+              scale: 0.9,
               modifier: 1,
               slideShadows: false,
             }}
@@ -51,8 +51,8 @@ const Section5 = () => {
             className="sec5-swiper-container"
           >
             <SwiperSlide className="sec5-swiper-slide">
-              <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
-              <img src={String(img1)} className="sec5-img-mb" alt="Temp" />
+              <img src={String(img1Pc)} id="pc" className="sec5-img-pc w-[70%]" alt="Temp" />
+              <img src={String(img1)} id="mb" className="sec5-img-mb" alt="Temp" />
             </SwiperSlide>
             <SwiperSlide className="sec5-swiper-slide">
               <img src={String(img1Pc)} className="sec5-img-pc w-[70%]" alt="Temp" />
