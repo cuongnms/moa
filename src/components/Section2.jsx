@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import "swiper/css/navigation";
@@ -6,18 +6,33 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css";
 import "../assets/css/sec2-swiper.css";
-import img1 from "../assets/images/sec3-bg-mb.png";
-import img2 from "../assets/images/sec4-bg-mb.png";
-import img3 from "../assets/images/sec5-bg-mb.png";
+import Popup from "./Popup";
 import subtitle1 from "../assets/images/sec2-subtitle.png";
+import { PopupContent } from "../data/data";
 const Section2 = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (showPopup) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [showPopup]);
+  const togglePopup = (index) => {
+    setShowPopup(!showPopup);
+    index !== -1 && setIndex(index);
+  };
   return (
     <>
       <div className="overflow-hidden flex items-center justify-center relative w-full responsive-bg2">
         <div className="sec2-title" />
         <div className="sec2-container">
           <Swiper
-            modules={[EffectFade, Navigation, Pagination]}
+            modules={[EffectFade, Autoplay, Navigation, Pagination]}
             effect={"fade"}
             grabCursor={true}
             centeredSlides={true}
@@ -36,69 +51,28 @@ const Section2 = () => {
               el: ".sec2-swiper-pagination",
               clickable: true,
             }}
-            // autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 3000 }}
             className="sec2-swiper-container"
           >
-            <SwiperSlide
-              className="sec2-swiper-slide banner1"
-            >
-              <div className="frame-content">
-                <div
-                  className="subtitle"
-                  style={{ backgroundImage: `url(${subtitle1})` }}
-                />
-                <p className="sec2-content-txt">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially...
-                </p>
-                <div className="btn-viewmore" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              className="sec2-swiper-slide banner2"
-            >
-              <div className="frame-content">
-                <div
-                  className="subtitle"
-                  style={{ backgroundImage: `url(${subtitle1})` }}
-                />
-                <p className="sec2-content-txt">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially...
-                </p>
-                <div className="btn-viewmore" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide
-              className="sec2-swiper-slide banner3"
-            >
-              <div className="frame-content">
-                <div
-                  className="subtitle"
-                  style={{ backgroundImage: `url(${subtitle1})` }}
-                />
-                <p className="sec2-content-txt">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially...
-                </p>
-                <div className="btn-viewmore" />
-              </div>
-            </SwiperSlide>
+            {PopupContent.map((item, index) => (
+              <>
+                <SwiperSlide key={index} className={`sec2-swiper-slide banner${index + 1}`}>
+                  <div className="frame-content">
+                    <div
+                      className={`subtitle${index+1}`}
+                      style={{ backgroundImage: `url(${String(item.title)})` }}
+                    />
+                    <div className="sec2-content-txt">
+                      {item.popupContent.replace("\n", "")}
+                    </div>
+                    <div
+                      className="btn-viewmore"
+                      onClick={() => togglePopup(index)}
+                    />
+                  </div>
+                </SwiperSlide>
+              </>
+            ))}
 
             <div className="sec2-slider-controler">
               <div className="sec2-swiper-button-prev"></div>
@@ -108,6 +82,7 @@ const Section2 = () => {
           <div className="sec2-swiper-pagination"></div>
         </div>
       </div>
+      <Popup index={index} show={showPopup} onClose={() => togglePopup(-1)} />
     </>
   );
 };

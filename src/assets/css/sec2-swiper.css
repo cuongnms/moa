@@ -51,13 +51,29 @@
     align-items: center;
   }
 
-  .subtitle {
+  .subtitle1 {
     width: 100%;
     position: relative;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    aspect-ratio: 570/103;
+    aspect-ratio: 702/127;
+  }
+  .subtitle2 {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 802/124;
+  }
+  .subtitle3 {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 959/127;
   }
 
   .btn-viewmore {
@@ -74,6 +90,10 @@
   .sec2-content-txt {
     color: white;
     font-size: var(--fs-sec2-content);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
 
   .sec2-slider-controler {
@@ -199,7 +219,7 @@
   .frame-content {
     position: absolute;
     width: 33%;
-    left: 12%;
+    left: 14%;
     top: 33%;
     display: flex;
     flex-direction: column;
@@ -207,13 +227,29 @@
     align-items: center;
   }
 
-  .subtitle {
+  .subtitle1 {
     width: 100%;
     position: relative;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    aspect-ratio: 570/103;
+    aspect-ratio: 702/127;
+  }
+  .subtitle2 {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 802/124;
+  }
+  .subtitle3 {
+    width: 100%;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    aspect-ratio: 959/127;
   }
 
   .btn-viewmore {
@@ -230,6 +266,10 @@
   .sec2-content-txt {
     color: white;
     font-size: var(--fs-sec2-content);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
   }
 
   .sec2-slider-controler {

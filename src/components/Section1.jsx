@@ -11,7 +11,7 @@ const Section1 = () => {
           </video>
         </div>
         <div className="logo-18" />
-        <div className="scroll" />
+        <div className="scroll animate-scroll-bound" />
         
       </div>
     </>

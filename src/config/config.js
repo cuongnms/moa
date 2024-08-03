@@ -1,0 +1,10 @@
+export const HomePageUrl = "https://google.com";
+export const PaymentPageUrl = "https://paypal.com";
+export const ApkDownloadUrl = "https://play.google.com";
+export const AppStoreUrl = "https://apps.apple.com";
+export const GooglePlayUrl = "https://play.google.com";
+export const FacebookUrl = "https://www.facebook.com";
+export const GroupUrl = "https://twitter.com";
+export const LoginUrl = "https://google.com";
+export const RegisterUrl = "https://google.com";
+export const TermUrl = "https://google.com";
