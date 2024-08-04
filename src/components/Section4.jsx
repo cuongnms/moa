@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import openTreasure from "../assets/images/sec4-treasure-open.png";
 import closeTreasure from "../assets/images/sec4-treasure-close.png";
 import { TermUrl } from "../config/config";
+import PopupLogin from "./PopupLogin";
+
 const Section4 = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
   const [treasureStatus, setTreasureStatus] = useState([
     false,
     false,
@@ -10,6 +14,21 @@ const Section4 = () => {
     false,
     false,
   ]);
+
+  useEffect(() => {
+    if (showPopup) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [showPopup]);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
 
   
 
@@ -91,18 +110,22 @@ const Section4 = () => {
             />
           </div>
         </div>
-
-        <div className="sec4-btns">
-          <a className="sec4-btn-checkin"></a>
-          <a href={TermUrl} className="sec4-btn-term"></a>
+        <div>
+            
         </div>
-        <div className="sec4-note">
+        <div className="sec4-btns">
+          <a className="sec4-btn-checkin" onClick={togglePopup}></a>
+          <a href={TermUrl} target="_blank" className="sec4-btn-term"></a>
+        </div>
+        {/* <div className="sec4-note">
           <p>
             *Tham dự sự kiện đồng nghĩa người chơi đồng ý với các điều khoản và
             điều kiện từ Ban Điều Hành
           </p>
-        </div>
+        </div> */}
       </div>
+      <PopupLogin show={showPopup} onClose={() => togglePopup()} />
+
     </>
   );
 };

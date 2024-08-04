@@ -1,6 +1,6 @@
 import React from "react";
 import { PopupContent } from "../data/data";
-const Popup = ({ index, show, onClose }) => {
+const PopupStory = ({ index, show, onClose }) => {
   if (!show) return null;
   return (
     <div
@@ -15,7 +15,7 @@ const Popup = ({ index, show, onClose }) => {
           onClose();
         }
       }}>
-        <div className="popup-content">
+        <div className="popup-content animate__animated animate__zoomIn">
             <a className={`content-header-${index+1}`} />
             <div className="content-body">
             {PopupContent[index].popupContent.split('\n').map((line, index) => <p key={index}>{line}</p>)}
@@ -26,4 +26,4 @@ const Popup = ({ index, show, onClose }) => {
   );
 };
 
-export default Popup;
+export default PopupStory;

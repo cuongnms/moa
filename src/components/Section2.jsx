@@ -6,8 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css";
 import "../assets/css/sec2-swiper.css";
-import Popup from "./Popup";
-import subtitle1 from "../assets/images/sec2-subtitle.png";
+import PopupStory from "./PopupStory";
 import { PopupContent } from "../data/data";
 const Section2 = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -78,11 +77,13 @@ const Section2 = () => {
               <div className="sec2-swiper-button-prev"></div>
               <div className="sec2-swiper-button-next"></div>
             </div>
+
           </Swiper>
           <div className="sec2-swiper-pagination"></div>
+
         </div>
       </div>
-      <Popup index={index} show={showPopup} onClose={() => togglePopup(-1)} />
+      <PopupStory index={index} show={showPopup} onClose={() => togglePopup(-1)} />
     </>
   );
 };

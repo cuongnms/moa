@@ -7,6 +7,9 @@ import dot from "../assets/images/swiper-bullet-active.png";
 import dkSkill1 from "../assets/images/dk-skill1.png";
 import dkSkill2 from "../assets/images/dk-skill2.png";
 import dkSkill3 from "../assets/images/dk-skill3.png";
+import hover from "../assets/images/hover.png";
+import { Tooltip } from "react-tooltip";
+
 const Section3 = () => {
   const [rotate, setRotate] = useState(0);
   const [char, setChar] = useState("1");
@@ -21,7 +24,7 @@ const Section3 = () => {
   }, []);
   const isMobile = () => {
     return window.innerWidth < 769;
-  }
+  };
   const spin = (event) => {
     const id = event.target.id;
     if (document.getElementById(id).classList.contains("mid")) {
@@ -76,7 +79,9 @@ const Section3 = () => {
     if (circle != null) {
       circle.style.transition = "transform 1s";
       if (document.getElementById(id).classList.contains("right")) {
-        isMobile() ? circle.style.transform = `rotate(${rotate + 130}deg)` : circle.style.transform = `rotate(${rotate + 40}deg)`
+        isMobile()
+          ? (circle.style.transform = `rotate(${rotate + 130}deg)`)
+          : (circle.style.transform = `rotate(${rotate + 40}deg)`);
         setRotate((rotate) => rotate + 40);
         const newRightId = id === "1" ? 9 : parseInt(id) - 1;
         document.querySelector(".left").classList.remove("left");
@@ -86,7 +91,9 @@ const Section3 = () => {
         document.getElementById(id).classList.remove("right");
         document.getElementById(id).classList.add("mid");
       } else if (document.getElementById(id).classList.contains("left")) {
-        isMobile() ? circle.style.transform = `rotate(${rotate + 50}deg)` : circle.style.transform = `rotate(${rotate - 40}deg)`
+        isMobile()
+          ? (circle.style.transform = `rotate(${rotate + 50}deg)`)
+          : (circle.style.transform = `rotate(${rotate - 40}deg)`);
         setRotate((rotate) => rotate - 40);
         const newLeftId = id === "9" ? 1 : parseInt(id) + 1;
         document.querySelector(".right").classList.remove("right");
@@ -104,6 +111,8 @@ const Section3 = () => {
       <div className="overflow-hidden flex items-center relative w-full responsive-bg3">
         <div className="sec3-layout" />
         <div className="sec3-title" />
+        <div className="fx1" />
+        <div className="fx2" />
         <div className="sec3-curve-char">
           <div className="sec3-circle">
             <div id="1" className="item dk-active" onClick={spin} />
@@ -123,9 +132,15 @@ const Section3 = () => {
             parseInt(char) % 3 === 1 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-          <div className={`sec3-char-info ${
-            parseInt(char) % 3 === 1 ? "animate__animated animate__fadeInRight" : ""
-          }`}>
+          <div className="sec3-layout-bg" />
+
+          <div
+            className={`sec3-char-info ${
+              parseInt(char) % 3 === 1
+                ? "animate__animated animate__fadeInRight"
+                : ""
+            }`}
+          >
             <img src={dkName} className="char-name-dk" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
@@ -152,9 +167,39 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-                <img src={dkSkill1} className="skills" />
-                <img src={dkSkill2} className="skills" />
-                <img src={dkSkill3} className="skills" />
+                <div
+                  id="dk-skill-1"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  onClick={() => setSkill(0)}
+                >
+                  {skill === 0 && <img src={String(hover)} />}
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+
+                <div
+                  id="dk-skill-2"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  onClick={() => setSkill(1)}
+                >
+                  {skill === 1 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+
+                <div
+                  id="dk-skill-3"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  onClick={() => setSkill(2)}
+                >
+                  {skill === 2 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
+
               </div>
             </div>
           </div>
@@ -166,9 +211,14 @@ const Section3 = () => {
             parseInt(char) % 3 === 2 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-         <div className={`sec3-char-info ${
-            parseInt(char) % 3 === 2 ? "animate__animated animate__fadeInRight" : ""
-          }`}>
+          <div className="sec3-layout-bg" />
+          <div
+            className={`sec3-char-info ${
+              parseInt(char) % 3 === 2
+                ? "animate__animated animate__fadeInRight"
+                : ""
+            }`}
+          >
             <img src={dwName} className="char-name-dw" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
@@ -195,9 +245,39 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-                <img src={dkSkill1} className="skills" />
-                <img src={dkSkill2} className="skills" />
-                <img src={dkSkill3} className="skills" />
+                <div
+                  id="dk-skill-1"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  onClick={() => setSkill(0)}
+                >
+                  {skill === 0 && <img src={String(hover)} />}
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+
+                <div
+                  id="dk-skill-2"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  onClick={() => setSkill(1)}
+                >
+                  {skill === 1 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+
+                <div
+                  id="dk-skill-3"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  onClick={() => setSkill(2)}
+                >
+                  {skill === 2 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
+
               </div>
             </div>
           </div>
@@ -209,9 +289,14 @@ const Section3 = () => {
             parseInt(char) % 3 === 0 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-          <div className={`sec3-char-info ${
-            parseInt(char) % 3 === 0 ? "animate__animated animate__fadeInRight" : ""
-          }`}>
+          <div className="sec3-layout-bg" />
+          <div
+            className={`sec3-char-info ${
+              parseInt(char) % 3 === 0
+                ? "animate__animated animate__fadeInRight"
+                : ""
+            }`}
+          >
             <img src={elfName} className="char-name-elf" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
@@ -238,9 +323,39 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-                <img src={dkSkill1} className="skills" />
-                <img src={dkSkill2} className="skills" />
-                <img src={dkSkill3} className="skills" />
+                <div
+                  id="dk-skill-1"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  onClick={() => setSkill(0)}
+                >
+                  {skill === 0 && <img src={String(hover)} />}
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+
+                <div
+                  id="dk-skill-2"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  onClick={() => setSkill(1)}
+                >
+                  {skill === 1 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+
+                <div
+                  id="dk-skill-3"
+                  className="skills"
+                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  onClick={() => setSkill(2)}
+                >
+                  {skill === 2 && <img src={String(hover)} />}
+
+                </div>
+                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
+
               </div>
             </div>
           </div>
