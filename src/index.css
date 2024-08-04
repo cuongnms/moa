@@ -56,6 +56,7 @@ body:has(.no-allow-scroll) {
   display: none;
 }
 
+
 img,
 .nodrag {
   -webkit-user-drag: none;
@@ -264,6 +265,7 @@ img,
     --fs-footer: 1vw;
     --fs-sec4: 1.2vw;
     --fs-sec2-content: 1.5vw;
+    --animate-delay: 0.2s;
   }
   .responsive-bg-header {
     background-image: url("./assets/images/header_pc.png");

@@ -123,7 +123,9 @@ const Section3 = () => {
             parseInt(char) % 3 === 1 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-          <div className="sec3-char-info">
+          <div className={`sec3-char-info ${
+            parseInt(char) % 3 === 1 ? "animate__animated animate__fadeInRight" : ""
+          }`}>
             <img src={dkName} className="char-name-dk" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
@@ -164,7 +166,9 @@ const Section3 = () => {
             parseInt(char) % 3 === 2 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-          <div className="sec3-char-info">
+         <div className={`sec3-char-info ${
+            parseInt(char) % 3 === 2 ? "animate__animated animate__fadeInRight" : ""
+          }`}>
             <img src={dwName} className="char-name-dw" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
@@ -205,7 +209,9 @@ const Section3 = () => {
             parseInt(char) % 3 === 0 ? "animate-fade-in" : "animate-fade-out"
           }`}
         >
-          <div className="sec3-char-info">
+          <div className={`sec3-char-info ${
+            parseInt(char) % 3 === 0 ? "animate__animated animate__fadeInRight" : ""
+          }`}>
             <img src={elfName} className="char-name-elf" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">

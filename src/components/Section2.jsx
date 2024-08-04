@@ -57,7 +57,7 @@ const Section2 = () => {
             {PopupContent.map((item, index) => (
               <>
                 <SwiperSlide key={index} className={`sec2-swiper-slide banner${index + 1}`}>
-                  <div className="frame-content">
+                  <div className="frame-content animate__animated animate__fadeInUp">
                     <div
                       className={`subtitle${index+1}`}
                       style={{ backgroundImage: `url(${String(item.title)})` }}

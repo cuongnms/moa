@@ -11,6 +11,8 @@ const Section4 = () => {
     false,
   ]);
 
+  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,6 +25,7 @@ const Section4 = () => {
       }
     };
     fetchData();
+    
   }, []);
 
   return (
@@ -32,9 +35,9 @@ const Section4 = () => {
         <div className="sec4-line1" />
         <div className="sec4-line2" />
         <div className="sec4-wrapper">
-          <div className="flag1 flag1-margin1" style={{filter: `${treasureStatus[0] ? "" : "grayscale(100%)"}`}}>
+          <div className="flag1 flag1-margin1 wow animate__animated animate__fadeInUp animate__delay-1s" style={{filter: `${treasureStatus[0] ? "" : "grayscale(100%)"}`}}>
             <a
-              className="treasure-close"
+              className="treasure-close wow animate__animated animate__fadeIn animate__delay-1s"
               style={{
                 backgroundImage: `url(${
                   treasureStatus[0] ? openTreasure : closeTreasure
@@ -43,9 +46,9 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag1 flag1-margin2" style={{filter: `${treasureStatus[1] ? "" : "grayscale(100%)"}`}}>
+          <div className="flag1 flag1-margin2 wow animate__animated animate__fadeInUp animate__delay-2s" style={{filter: `${treasureStatus[1] ? "" : "grayscale(100%)"}`}}>
             <a
-              className="treasure-close"
+              className="treasure-close wow animate__animated animate__fadeIn animate__delay-2s"
               style={{
                 backgroundImage: `url(${
                   treasureStatus[1] ? openTreasure : closeTreasure
@@ -54,9 +57,9 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag2" style={{filter: `${treasureStatus[2] ? "" : "grayscale(100%)"}`}}>
+          <div className="flag2 wow animate__animated animate__fadeInUp animate__delay-3s" style={{filter: `${treasureStatus[2] ? "" : "grayscale(100%)"}`}}>
             <div
-              className="treasure-close"
+              className="treasure-close wow animate__animated animate__fadeIn animate__delay-3s"
               style={{
                 backgroundImage: `url(${
                   treasureStatus[2] ? openTreasure : closeTreasure
@@ -65,9 +68,9 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag2" style={{filter: `${treasureStatus[3] ? "" : "grayscale(100%)"}`}}>
+          <div className="flag2 wow animate__animated animate__fadeInUp animate__delay-4s" style={{filter: `${treasureStatus[3] ? "" : "grayscale(100%)"}`}}>
             <div
-              className="treasure-close"
+              className="treasure-close wow animate__animated animate__fadeIn animate__delay-4s"
               style={{
                 backgroundImage: `url(${
                   treasureStatus[3] ? openTreasure : closeTreasure
@@ -76,9 +79,9 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag3" style={{filter: `${treasureStatus[4] ? "" : "grayscale(100%)"}`}}>
+          <div className="flag3 wow animate__animated animate__fadeInUp animate__delay-5s" style={{filter: `${treasureStatus[4] ? "" : "grayscale(100%)"}`}}>
             <div
-              className="treasure-close last-treasure"
+              className="treasure-close last-treasure wow animate__animated animate__fadeIn animate__delay-5s"
               style={{
                 backgroundImage: `url(${
                   treasureStatus[4] ? openTreasure : closeTreasure
