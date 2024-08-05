@@ -318,7 +318,7 @@ img,
 
   .scroll {
     position: absolute;
-    bottom: 2%;
+    bottom: 7%;
     width: 12%;
     background-size: cover;
     background-position: center;
@@ -416,7 +416,10 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    aspect-ratio: 138/138;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 159/157;
   }
 
   .skills-wrapper {
@@ -553,10 +556,10 @@ img,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 36%;
     height: 50%;
     top: 15%;
-    right: 0%;
+    right: 10%;
   }
   .char-info {
     position: relative;
@@ -588,24 +591,16 @@ img,
   }
 
 
-  .fx1 {
+  .bg-char {
   position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/fx1.gif");
+    background-image: url("./assets/images/sec3-bg-animation.gif");
   }
-   .fx2 {
-   position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("./assets/images/fx2.gif");
-  }
+   
 
   /* Section4 css */
   .responsive-bg4 {
@@ -1205,7 +1200,10 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    aspect-ratio: 138/138;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 159/157;
   }
   .skills-wrapper {
     gap: 2%;
@@ -1303,7 +1301,7 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/dk-bg.png");
+    background-image: url("./assets/images/dk-bg-mb.png");
     aspect-ratio: 1446/1080;
   }
 
@@ -1312,7 +1310,7 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/dw-bg.png");
+    background-image: url("./assets/images/dw-bg-mb.png");
     aspect-ratio: 1446/1080;
   }
 
@@ -1321,7 +1319,7 @@ img,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./assets/images/elf-bg.png");
+    background-image: url("./assets/images/elf-bg-mb.png");
     aspect-ratio: 1446/1080;
   }
 

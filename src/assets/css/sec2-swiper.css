@@ -277,10 +277,10 @@
     position: absolute;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 90%;
     top: 0%;
+    gap: 80%;
   }
 
   .sec2-slider-controler .sec2-swiper-button-next {
@@ -293,6 +293,7 @@
     background-color: transparent;
     aspect-ratio: 140/100;
     z-index: 10;
+    cursor: pointer;
   }
 
   .swiper-button-next::after {
@@ -313,6 +314,7 @@
     background-color: transparent;
     aspect-ratio: 140/100;
     z-index: 10;
+    cursor: pointer;
   }
 
   .sec2-swiper-pagination {

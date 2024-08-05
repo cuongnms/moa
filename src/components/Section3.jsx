@@ -111,8 +111,7 @@ const Section3 = () => {
       <div className="overflow-hidden flex items-center relative w-full responsive-bg3">
         <div className="sec3-layout" />
         <div className="sec3-title" />
-        <div className="fx1" />
-        <div className="fx2" />
+        <div className="bg-char" />
         <div className="sec3-curve-char">
           <div className="sec3-circle">
             <div id="1" className="item dk-active" onClick={spin} />
@@ -170,36 +169,50 @@ const Section3 = () => {
                 <div
                   id="dk-skill-1"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 0 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(0)}
                 >
-                  {skill === 0 && <img src={String(hover)} />}
+                  <img width={"80%"} src={String(dkSkill1)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-1"
+                  content="Skill 1 DK"
+                />
 
                 <div
                   id="dk-skill-2"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 1 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(1)}
                 >
-                  {skill === 1 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill2)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-2"
+                  content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                />
 
                 <div
                   id="dk-skill-3"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 2 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(2)}
                 >
-                  {skill === 2 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill3)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-3"
+                  content="Skill 3 DK"
+                />
               </div>
             </div>
           </div>
@@ -245,39 +258,53 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-                <div
+              <div
                   id="dk-skill-1"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 0 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(0)}
                 >
-                  {skill === 0 && <img src={String(hover)} />}
+                  <img width={"80%"} src={String(dkSkill1)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-1"
+                  content="Skill 1 DK"
+                />
 
                 <div
                   id="dk-skill-2"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 1 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(1)}
                 >
-                  {skill === 1 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill2)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-2"
+                  content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                />
 
                 <div
                   id="dk-skill-3"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 2 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(2)}
                 >
-                  {skill === 2 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill3)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-3"
+                  content="Skill 3 DK"
+                />
               </div>
             </div>
           </div>
@@ -323,39 +350,53 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-                <div
+              <div
                   id="dk-skill-1"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill1})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 0 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(0)}
                 >
-                  {skill === 0 && <img src={String(hover)} />}
+                  <img width={"80%"} src={String(dkSkill1)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-1" content="Skill 1 DK" />
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-1"
+                  content="Skill 1 DK"
+                />
 
                 <div
                   id="dk-skill-2"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill2})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 1 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(1)}
                 >
-                  {skill === 1 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill2)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-2" content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-2"
+                  content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                />
 
                 <div
                   id="dk-skill-3"
                   className="skills"
-                  style={{ backgroundImage: `url(${dkSkill3})` }}
+                  style={{
+                    backgroundImage: `url(${skill === 2 ? hover : null})`,
+                  }}
                   onClick={() => setSkill(2)}
                 >
-                  {skill === 2 && <img src={String(hover)} />}
-
+                  <img width={"80%"} src={String(dkSkill3)} />
                 </div>
-                <Tooltip place="bottom" anchorSelect="#dk-skill-3" content="Skill 3 DK" />
-
+                <Tooltip
+                  place="bottom"
+                  anchorSelect="#dk-skill-3"
+                  content="Skill 3 DK"
+                />
               </div>
             </div>
           </div>
