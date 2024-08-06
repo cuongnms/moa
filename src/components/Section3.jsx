@@ -9,7 +9,7 @@ import dkSkill2 from "../assets/images/dk-skill2.png";
 import dkSkill3 from "../assets/images/dk-skill3.png";
 import hover from "../assets/images/hover.png";
 import { Tooltip } from "react-tooltip";
-
+import video from "../assets/videos/sec1-bg-video.mp4";
 const Section3 = () => {
   const [rotate, setRotate] = useState(0);
   const [char, setChar] = useState("1");
@@ -143,14 +143,14 @@ const Section3 = () => {
             <img src={dkName} className="char-name-dk" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full pl-[9%]">
+              <div className="relative flex items-center justify-start w-full pl-[5%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -158,7 +158,7 @@ const Section3 = () => {
                 </p>
               </div>
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
@@ -216,7 +216,18 @@ const Section3 = () => {
               </div>
             </div>
           </div>
-          <div className="sec3-char-video"></div>
+          <div className="sec3-char-video">
+            <video
+              width={500}
+              height={250}
+              controls
+              muted
+              poster="path-to-poster-image.jpg"
+            >
+              <source src={String(video)} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
         <div
           id="char2"
@@ -235,14 +246,14 @@ const Section3 = () => {
             <img src={dwName} className="char-name-dw" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full pl-[9%]">
+              <div className="relative flex items-center justify-start w-full pl-[5%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -250,7 +261,7 @@ const Section3 = () => {
                 </p>
               </div>
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
@@ -258,7 +269,7 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-              <div
+                <div
                   id="dk-skill-1"
                   className="skills"
                   style={{
@@ -327,14 +338,14 @@ const Section3 = () => {
             <img src={elfName} className="char-name-elf" />
             <div className="char-info">
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
                   <p>Giới thiệu nhân vật</p>
                 </span>
               </div>
-              <div className="relative flex items-center justify-start w-full pl-[9%]">
+              <div className="relative flex items-center justify-start w-full pl-[5%]">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -342,7 +353,7 @@ const Section3 = () => {
                 </p>
               </div>
               <div className="relative flex items-center justify-start w-full">
-                <img src={dot} className="w-[7%]" />
+                <img src={dot} className="w-[4%]" />
                 <span
                   style={{ fontFamily: "beaufort-bold", textIndent: "4px" }}
                 >
@@ -350,7 +361,7 @@ const Section3 = () => {
                 </span>
               </div>
               <div className="relative w-full flex items-center justify-center skills-wrapper">
-              <div
+                <div
                   id="dk-skill-1"
                   className="skills"
                   style={{

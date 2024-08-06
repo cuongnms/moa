@@ -556,7 +556,7 @@ img,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 36%;
+    width: 34%;
     height: 50%;
     top: 15%;
     right: 10%;
@@ -601,6 +601,21 @@ img,
     background-image: url("./assets/images/sec3-bg-animation.gif");
   }
    
+  .sec3-char-video {
+    position: absolute;
+    width: 36%;
+    top: 57%;
+    left: 18%;
+    aspect-ratio: 683/389;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/border-video.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6%;
+  }
 
   /* Section4 css */
   .responsive-bg4 {
@@ -1370,6 +1385,25 @@ img,
     height: 30%;
     color: white;
     font-size: var(--fs-sec2-content);
+  }
+
+  .sec3-char-video {
+    position: absolute;
+    width: 78%;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 683/389;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/border-video.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4%;
   }
 
   .char-name-dk {
