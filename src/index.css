@@ -262,7 +262,7 @@ img,
   :root {
     --fs-header: 2.5vw;
     --fs-footer: 1vw;
-    --fs-sec4: 1.2vw;
+    --fs-sec4: 1.4vw;
     --fs-sec2-content: 1.5vw;
     --animate-delay: 0.2s;
   }
@@ -606,7 +606,7 @@ img,
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-pc.png");
     aspect-ratio: 1920/1080;
-    gap: 2%;
+    gap: 1%;
   }
 
   .sec4-title {
@@ -635,7 +635,7 @@ img,
 
   .sec4-line1 {
     position: absolute;
-    top: 66%;
+    top: 65%;
     width: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -743,6 +743,22 @@ img,
     font-size: var(--fs-sec4);
     font-family: "beaufort-reg";
     color: "white";
+    font-style: italic;
+  }
+
+  .player-info {
+    width: 24%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/player-bg.png");
+    aspect-ratio: 298/61;
+    font-family: "beaufort-bold";
+    font-size: 3.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
 
   /* Section5 css */
@@ -919,6 +935,7 @@ img,
   .popup-login {
     position: relative;
     height: 36%;
+    min-height: 350px;
     width: 100%;
     max-width: 614px;
     display: flex;
@@ -1377,6 +1394,7 @@ img,
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-mb.png");
     aspect-ratio: 750/1335;
+    
   }
 
   .sec4-title {
@@ -1400,7 +1418,7 @@ img,
     height: 65%;
     align-items: center;
     justify-content: center;
-    margin-top: 24%;
+    margin-top: 21%;
   }
 
   .sec4-flags1 {
@@ -1414,7 +1432,7 @@ img,
 
   .sec4-line1 {
     position: absolute;
-    top: 45.5%;
+    top: 43.5%;
     width: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1449,7 +1467,7 @@ img,
 
   .sec4-line2 {
     position: absolute;
-    top: 78%;
+    top: 76%;
     width: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1524,7 +1542,7 @@ img,
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6%;
+    margin-top: 2%;
   }
 
   .sec4-btn-checkin {
@@ -1556,6 +1574,23 @@ img,
     color: white;
     font-size: var(--fs-sec4);
     font-family: "beaufort-reg";
+    font-style: italic;
+  }
+
+  .player-info {
+    width: 32%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/player-bg.png");
+    aspect-ratio: 298/61;
+    font-family: "beaufort-bold";
+    font-size: 4.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 7%;
   }
 
   /* Section5 css */
@@ -1624,6 +1659,7 @@ img,
   .popup-login {
     position: relative;
     height: 50%;
+    min-height: 500px;
     width: 100%;
     max-width: 614px;
     display: flex;

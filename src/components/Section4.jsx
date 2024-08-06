@@ -15,6 +15,8 @@ const Section4 = () => {
     false,
   ]);
 
+  const [player, setPlayer] = useState(0);
+
   useEffect(() => {
     if (showPopup) {
       document.body.style.overflow = "hidden";
@@ -30,21 +32,21 @@ const Section4 = () => {
     setShowPopup(!showPopup);
   };
 
-  
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await fetch('https://api.example.com/data'); 
+        // const response = await fetch('https://api.example.com/data');
         // const json = await response.json();
+        // json = {status: [true, true, false, false, false], players: 1000 };
         const status = [true, true, false, false, false];
+        const players = 1000;
         setTreasureStatus(status);
+        setPlayer(players);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
     fetchData();
-    
   }, []);
 
   return (
@@ -54,7 +56,10 @@ const Section4 = () => {
         <div className="sec4-line1" />
         <div className="sec4-line2" />
         <div className="sec4-wrapper">
-          <div className="flag1 flag1-margin1 wow animate__animated animate__fadeInUp animate__delay-1s" style={{filter: `${treasureStatus[0] ? "" : "grayscale(100%)"}`}}>
+          <div
+            className="flag1 flag1-margin1 wow animate__animated animate__fadeInUp animate__delay-1s"
+            style={{ filter: `${treasureStatus[0] ? "" : "grayscale(100%)"}` }}
+          >
             <a
               className="treasure-close wow animate__animated animate__fadeIn animate__delay-1s"
               style={{
@@ -65,7 +70,10 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag1 flag1-margin2 wow animate__animated animate__fadeInUp animate__delay-2s" style={{filter: `${treasureStatus[1] ? "" : "grayscale(100%)"}`}}>
+          <div
+            className="flag1 flag1-margin2 wow animate__animated animate__fadeInUp animate__delay-2s"
+            style={{ filter: `${treasureStatus[1] ? "" : "grayscale(100%)"}` }}
+          >
             <a
               className="treasure-close wow animate__animated animate__fadeIn animate__delay-2s"
               style={{
@@ -76,7 +84,10 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag2 wow animate__animated animate__fadeInUp animate__delay-3s" style={{filter: `${treasureStatus[2] ? "" : "grayscale(100%)"}`}}>
+          <div
+            className="flag2 wow animate__animated animate__fadeInUp animate__delay-3s"
+            style={{ filter: `${treasureStatus[2] ? "" : "grayscale(100%)"}` }}
+          >
             <div
               className="treasure-close wow animate__animated animate__fadeIn animate__delay-3s"
               style={{
@@ -87,7 +98,10 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag2 wow animate__animated animate__fadeInUp animate__delay-4s" style={{filter: `${treasureStatus[3] ? "" : "grayscale(100%)"}`}}>
+          <div
+            className="flag2 wow animate__animated animate__fadeInUp animate__delay-4s"
+            style={{ filter: `${treasureStatus[3] ? "" : "grayscale(100%)"}` }}
+          >
             <div
               className="treasure-close wow animate__animated animate__fadeIn animate__delay-4s"
               style={{
@@ -98,7 +112,10 @@ const Section4 = () => {
               }}
             />
           </div>
-          <div className="flag3 wow animate__animated animate__fadeInUp animate__delay-5s" style={{filter: `${treasureStatus[4] ? "" : "grayscale(100%)"}`}}>
+          <div
+            className="flag3 wow animate__animated animate__fadeInUp animate__delay-5s"
+            style={{ filter: `${treasureStatus[4] ? "" : "grayscale(100%)"}` }}
+          >
             <div
               className="treasure-close last-treasure wow animate__animated animate__fadeIn animate__delay-5s"
               style={{
@@ -110,22 +127,18 @@ const Section4 = () => {
             />
           </div>
         </div>
-        <div>
-            
+        <div className="player-info">
+          <p>{player.toLocaleString("de-DE")}</p>
+        </div>
+        <div className="sec4-note">
+          <p>Đã có người chơi đăng ký</p>
         </div>
         <div className="sec4-btns">
           <a className="sec4-btn-checkin" onClick={togglePopup}></a>
           <a href={TermUrl} target="_blank" className="sec4-btn-term"></a>
         </div>
-        {/* <div className="sec4-note">
-          <p>
-            *Tham dự sự kiện đồng nghĩa người chơi đồng ý với các điều khoản và
-            điều kiện từ Ban Điều Hành
-          </p>
-        </div> */}
       </div>
       <PopupLogin show={showPopup} onClose={() => togglePopup()} />
-
     </>
   );
 };
