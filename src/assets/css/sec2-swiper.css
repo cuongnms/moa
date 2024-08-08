@@ -29,10 +29,10 @@
   }
   .banner2 {
     
-    background-image: url("../images/sec2-banner1-mb.png");
+    background-image: url("../images/sec2-banner2-mb.png");
   }
   .banner3 {
-    background-image: url("../images/sec2-banner1-mb.png");
+    background-image: url("../images/sec2-banner3-mb.png");
   }
 
   .swiper-slide .img {
@@ -193,7 +193,7 @@
     background-image: url("../images/sec2-banner2-pc.png");
   }
   .banner3 {
-    background-image: url("../images/sec2-banner2-pc.png");
+    background-image: url("../images/sec2-banner3-pc.png");
   }
 
   .swiper-slide-active {

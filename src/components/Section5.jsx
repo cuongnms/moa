@@ -33,8 +33,8 @@ const Section5 = () => {
             coverflowEffect={{
               rotate: 0,
               stretch: isMobile()
-                ? window.innerWidth * 0.76744
-                : window.innerWidth * 0.688,
+                ? window.innerWidth * 0.678
+                : window.innerWidth * 0.6129,
               scale: 0.9,
               modifier: 1,
               slideShadows: false,

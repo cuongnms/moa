@@ -110,8 +110,8 @@ const Section3 = () => {
     <>
       <div className="overflow-hidden flex items-center relative w-full responsive-bg3">
         <div className="sec3-layout" />
-        <div className="sec3-title" />
         <div className="bg-char" />
+        <div className="sec3-title" />
         <div className="sec3-curve-char">
           <div className="sec3-circle">
             <div id="1" className="item dk-active" onClick={spin} />
