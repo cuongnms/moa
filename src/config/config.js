@@ -8,3 +8,4 @@ export const GroupUrl = "https://twitter.com";
 export const LoginUrl = "https://google.com";
 export const RegisterUrl = "https://google.com";
 export const TermUrl = "https://google.com";
+export const DiscordUrl = "https://discord.com";

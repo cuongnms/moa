@@ -83,17 +83,6 @@ img,
   color: "white";
 }
 
-.header-logo {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("./assets/images/logo-game.png");
-  position: relative;
-  height: 100%;
-  aspect-ratio: 249/80;
-  width: 16%;
-}
-
 .left-header-wrapper {
   width: 24%;
   margin-right: 6%;
@@ -271,11 +260,23 @@ img,
     aspect-ratio: 1920/85;
   }
 
-  .header-logo {
-    margin-left: 1%;
+  .header-wrapper {
     position: relative;
-    width: 12%;
-    margin-top:0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-logo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/logo-game-pc.png");
+    aspect-ratio: 235/91;
+    position: relative;
+    width: 11%;
+    margin-left: 1.5%;
   }
 
   .header-text {
@@ -591,9 +592,8 @@ img,
     aspect-ratio: 215/178;
   }
 
-
   .bg-char {
-  position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -601,7 +601,7 @@ img,
     background-repeat: no-repeat;
     background-image: url("./assets/images/sec3-bg-animation.gif");
   }
-   
+
   .sec3-char-video {
     position: absolute;
     width: 36%;
@@ -1095,13 +1095,73 @@ img,
 
   /* Header css */
   .responsive-bg-header {
-    background-image: url("./assets/images/header_mb.png");
-    aspect-ratio: 750/112;
+    background-image: url("./assets/images/header-mb.png");
+    aspect-ratio: 750/137;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .header-logo {
+  .header-wrapper {
     position: relative;
-    width: 46%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 55%;
+  }
+
+  .header-btm-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    height: 45%;
+  }
+
+  .fb-link {
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/header-fanpage-link.png");
+        aspect-ratio: 127/31;
+
+  }
+
+  .community-link {
+    width: 34%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/header-community-link.png");
+        aspect-ratio: 227/28;
+
+  }
+
+   .discord-link {
+    width: 18%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/header-discord-link.png");
+        aspect-ratio: 118/30;
+
+  }
+
+
+
+  .header-logo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/logo-game-pc.png");
+    aspect-ratio: 235/91;
+    position: relative;
+    width: 20%;
+    margin-left: 0%;
   }
 
   .header-text {
@@ -1111,7 +1171,27 @@ img,
 
   .left-header-wrapper {
     width: 38%;
-    margin-right: 6%;
+    margin-right: 1%;
+  }
+
+  .header-pay-btn {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/header-pay-btn.png");
+    aspect-ratio: 141/54;
+    position: relative;
+    width: 18%;
+  }
+
+  .header-download-btn {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/header-download-btn.png");
+    aspect-ratio: 146/51;
+    position: relative;
+    width: 18%;
   }
 
   /* Section1 css */
@@ -1430,7 +1510,6 @@ img,
   .responsive-bg4 {
     background-image: url("./assets/images/sec4-bg-mb.png");
     aspect-ratio: 750/1335;
-    
   }
 
   .sec4-title {
